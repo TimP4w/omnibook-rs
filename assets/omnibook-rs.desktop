@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=OmniBook Settings
+Comment=HP OmniBook Ultra Flip settings
+Exec=omnibook-rs
+Icon=omnibook-rs
+Terminal=false
+Type=Application
+Categories=System;Settings;HardwareSettings;
+Keywords=HP;OmniBook;battery;touchpad;sensors;

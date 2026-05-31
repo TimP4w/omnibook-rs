@@ -1,0 +1,16 @@
+[Unit]
+Description=HP OmniBook daemon - sensor monitoring
+Documentation=https://github.com/TimP4w/omnibook-rs
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=@omnibookd@
+Restart=on-failure
+RestartSec=5
+# Give the service access to the graphical session
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/%U/bus
+PassEnvironment=XDG_CURRENT_DESKTOP XDG_SESSION_TYPE WAYLAND_DISPLAY DISPLAY SWAYSOCK HYPRLAND_INSTANCE_SIGNATURE
+
+[Install]
+WantedBy=graphical-session.target

@@ -1,0 +1,11 @@
+[package]
+name = "omnibook-rs"
+version = "0.1.0"
+edition = "2021"
+
+authors = ["TimP4w <timucin@besken.ch>"]
+
+[dependencies]
+gtk = { package = "gtk4", version = "0.10.3", features = ["v4_8"] }
+adw =  { package = "libadwaita", version = "0.8.1", features = ["v1_4"] }
+libc = "0.2"
